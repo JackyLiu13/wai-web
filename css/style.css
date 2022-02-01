@@ -1,0 +1,689 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Nunito Sans', sans-serif;
+	background: linear-gradient(315.42deg, #3D589E 23.44%, #536ADE 59.05%, #2594EF 93.92%, #469EEF 93.92%);
+}
+header{
+  min-height: 100px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+  padding-right: 5%;
+  background: rgba(62, 51, 221, 0.247)
+}
+
+.logo img{
+	position: absolute;
+	display:flex;
+	width: 80px;
+	height: 67px;
+	left: 36px;
+	top: 15px;
+  transition: transform 1s ease-in-out;
+}
+.logo img:hover{
+	transform: rotate(360deg);
+}
+
+
+.main{
+	height:calc(100vh - 100px);	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  padding-bottom: 10%;
+}
+
+
+.robot-img{
+	float: right;
+  width:100%;
+	height: auto;
+}
+
+main h1{
+	
+	font-weight: bold;
+	font-size: 74px;
+	color: #fff;
+}
+main h2{
+  padding-top: 100px;
+	font-size: 36px;
+	color: #fff;
+}
+main p{
+	font-size: 24px;
+	line-height: 33px;
+
+	color: #FFFFFF;
+
+}
+.cta{
+	border-radius: 39px;
+	padding: 12px 30px;
+	background: linear-gradient(105.05deg, #FFA3C6 27.23%, #FF40B3 118.58%);
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#metrics{	
+	height:auto;		
+	position: relative;	
+	background-image:url("/metrics_bg.png");	
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 10%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+#metrics #row-title{
+	padding-top: 10%;
+}
+#metrics .col-12 h1{
+  text-align: center;
+}
+
+#metrics #number-boxes{  
+	padding-top: 5%;
+	text-align: center;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+#metrics h1{
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 72px;
+	line-height: 75px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+#metrics .rectangle{
+	width: 250px;
+	height: 450px;
+	background: rgba(255, 255, 255, 0.4);
+	box-shadow: 0px 0px 10px 5px rgba(144, 144, 158, 0.1);	
+	border-radius: 52px;
+}
+
+#metrics .rectangle .counter{
+	padding-top: 50px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 100px;
+	line-height: 196px;
+
+}
+#metrics h2{
+	font-style: normal;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 42px;
+	text-align: center;
+}
+#metrics p{
+	font-style: italic;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 42px;
+	text-align: center;
+}
+
+#initiatives{	
+	height:auto;		
+	position: relative;	
+	background-image:url("/init_bg.png");		
+	background-repeat: no-repeat;
+	background-size: cover ;
+	margin: 0 auto;	
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#initiatives .top{
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(260.7deg, rgb(107, 171, 255) 22.96%, rgb(108, 132, 253) 39.14%, #2594EF 114.58%, #469EEF 174.58%);
+  background-clip: padding-box;	
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 10%;
+}
+#initiative-carousel .left, #initiative-carousel .right{
+  opacity: 0.1;
+}
+#initiatives .top h1{
+  font-style: normal;
+  font-weight: bold;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 98px;
+  
+}
+#initiatives .top h2{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 65px;
+}
+#initiatives ol{  
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#initiatives #row-title .col-12{
+  width: 650px;
+  height: auto;
+  left: auto;	
+  background: linear-gradient(319.65deg, #53ADFF 0.63%, #DE98FF 55.28%);
+  mix-blend-mode: overlay;
+  border-radius: 50px 50px 0 0;
+  text-align: center;
+  margin: 0 auto;  
+}
+#initiatives #row-title .col-12{  
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+
+}
+
+#initiatives #row-title h1{
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 65px;	
+  color: #FFFFFF;		
+  vertical-align:middle;  
+  padding: 20px 0 20px;
+}
+#initiatives .carousel-box{
+  padding-top:3%;
+}
+#initiatives #row-content{
+  padding-bottom: 10%;	
+}
+#initiatives #row-content .col-12{
+  padding-bottom: 5%;
+  width: 650px;
+  height: auto;
+  left: auto;	
+  background: linear-gradient(121.32deg, rgba(70, 158, 239, 0.5) 11.86%, rgba(182, 183, 239, 0.5) 87.36%);	
+  border-radius: 0 0 36px 36px;	
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#initiatives #row-content p{	
+  text-align: center;
+  margin:0 auto;	
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+
+
+
+#portfolios{
+	height:auto;		
+	position: relative;	
+	background-image:url("/port_bg.png");		
+	background-repeat: no-repeat;
+	background-size: cover ;
+	margin: 0 auto;	
+  padding-bottom: 10%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#portfolios #row-title h1{
+  padding-top: 10%;
+  background: linear-gradient(86.3deg, #A0C9F2 27.95%, #B6B7EF 176.13%);
+	background-clip: padding-box;	
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 89px;
+}
+#portfolios .row .col .rectangle{
+  width: 536px;
+  height: 296px;
+  background: linear-gradient(69.32deg, rgba(160, 201, 242, 0.3) 22.65%, rgba(182, 183, 239, 0.3) 63.87%);
+  backdrop-filter: blur(42px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+
+#portfolios #col-boxes{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  padding-top:2%;
+
+}
+#portfolios .row .col .row .col-5 h1{
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 30px;
+  mix-blend-mode: hard-light;
+  background: -webkit-linear-gradient(86.3deg, #A0C9F2 27.95%, #B6B7EF 176.13%);  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;    
+  text-transform: uppercase;
+
+
+}
+#portfolios .btn{
+  width: 159px;
+  height: 32px;
+  background:#fff;
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px;  
+  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #000;
+  
+  margin: 0 auto;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#portfolios .btn:hover{
+	background: #000;
+  color: #fff; 
+  /* idk the text wont turn white */
+
+}
+#portfolios .row .col .row .col-5 .robo-icon{
+  padding-top: 20%;
+  margin: 0 auto;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolios .row .col .row .col-7 p{
+  padding-top: 25%;
+  padding-right: 5%;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+#team{  
+	height:auto;		
+	position: relative;	
+	background-image:url("/bgs/team_bg.png");		
+	background-repeat: no-repeat;
+	background-size: cover ;
+	margin: 0 auto;	
+  padding-bottom: 20%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#team h1{
+  padding-top: 10%;
+  font-weight: 900;
+  font-size: 85px;
+  line-height: 102px;
+  color: #FAF1F1;
+  mix-blend-mode: overlay;
+  text-align: center;
+  text-transform: uppercase;
+}
+#team h2{
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 41px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(211, 228, 245) ;
+  padding-top: 5%;
+}
+#team .row{
+  padding-top:2%;
+}
+#team .container .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#team .container .row .col-3 .container .row .col{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#team .container .row .col-3 .pfp_icon{
+  max-width: 100px;
+  max-height: 100px;
+  clip-path: circle();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*no clue why its not a circle*/
+}
+#team .container .row .col-3 h3{
+  text-align: center;
+}
+
+#alumni{
+	height:auto;		
+	position: relative;	
+	background-image:url("/bgs/alumni_bg.png");		
+	background-repeat: no-repeat;
+	background-size: cover ;
+	margin: 0 auto;	
+  padding-bottom: 20%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#alumni h1{
+  padding-top: 30%;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 98px;
+  text-align: center;
+  text-transform: uppercase;
+  color:rgb(105, 200, 255);
+}
+#alumni .cloud-box{
+  padding-top:1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact{
+	height:auto;		
+	position: relative;	
+	background-image:url("/bgs/contact_bg.png");		
+	background-repeat: no-repeat;
+	background-size: cover ;
+	margin: 0 auto;	
+  padding-bottom: 10%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact #row-a{
+  padding-top:20%;
+}
+#contact .row{
+  padding-top:5%;
+}
+
+#contact .rectangle{
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(42px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 51px;
+  padding-top: 10px;
+  padding-bottom: 10px;  
+}
+#contact h1{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 150px;
+  color: rgb(51, 62, 121);
+  mix-blend-mode: color-burn; 
+  text-align: center;
+} 
+#contact h2{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+
+  color: rgb(51, 62, 121);
+
+  mix-blend-mode: color-burn;
+}
+#contact h3{
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#contact .btn{
+  /* blue-purple */
+  background: linear-gradient(160.32deg, #469EEF 4.06%, #B6B7EF 84.07%);
+  opacity: 0.7;
+  border-radius: 70px;
+  height: 60px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#contact .btn:hover{
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+}
+#contact #row-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+#contact #social-icon{
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+#contact #social-icon:hover{  
+	transform: rotate(360deg);
+}
+#contact #posts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact #posts img:hover{
+  cursor: pointer;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.3);  
+}
+#contact .spacer{
+  padding-top:5%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+nav{
+  width: 100%;
+}
+ul{
+  margin: 0 auto;
+  padding: 0;         
+  float: right;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #FFFFFF;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px 0;
+  color: #fff;
+  border-radius: 0px;
+  
+  transition: 0.6s;
+}
+
+ul .active, ul li:hover{
+  color:black;
+  background: white;
+  border-radius: 39px;
+}
+ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.toggle{
+  width: 100%;
+  padding: 10px 20px;
+  text-align: right;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+@media (max-width: 1100px){
+    .toggle{
+      display: block;
+    }
+    .fa{
+      padding: 30px;
+    }
+    ul{
+      width: 100%;
+      display: none;
+      padding-bottom: 20px;
+    }
+    ul li{
+      display: block;
+      text-align: center;
+      padding: 10px 0 10px;
+    }
+    .active{
+      display: block;
+    }
+    header{
+      height: auto;
+    }
+    #contact .btn{
+      font-size: 16px;
+
+    }
+    #sponsor-clouds{
+      width:95%;
+      height:95%;
+    }
+    #robot-img{
+      width:auto;
+      height:140px;
+    }
+    #contact h1{
+      font-size: 55px;
+
+    }
+    #contact h2{
+      font-size: 37px;
+    }
+    #contact #ig-post img{
+      width:100px;
+      height: auto;      
+    }
+    #contact #social-icon{
+      width:35px;
+      height:auto;
+    }
+    #contact .col-5{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+    #contact .col-5 .rectangle h2{
+      padding-top: 45px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+    
+    #metrics .col{
+      padding-top: 40px;
+    }
+}

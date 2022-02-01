@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Western AI</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+	</script>
+	<!-- BOOTSTRAP STUFF WILL ADDED CSS only -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+
+	</script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	 crossorigin="anonymous">
+	<!-- STUFF WILL ADDED CSS only -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js">
+
+	</script>
+
+
+	<!-- jquery for nav bar -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script>
+      $(document).ready(function(){
+        $('.menu').click(function(){
+            $('ul').toggleClass('active');
+        })
+      });
+  </script>
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<img src="logo.png">
+		</div>
+    <!-- Navigation bar -->
+		<nav>
+        <div class="toggle">
+            <a href="#">
+                <i class="fa fa-bars menu"></i>
+            </a>
+        </div>
+        <ul>
+            <a href="#main"><li class="active">About</li></a>
+            <a href="#metrics"><li>Metrics</li></a>
+            <a href="#initiatives"><li>Initiatives</li></a>
+            <a href="#portfolios"><li>Portfolios</li></a>
+            <a href="#team"><li>Team</li></a>
+            <a href="#alumni"><li>Alumni</li></a>
+            <a href="#contact"><li>Contact Us</li></a>
+        </ul>
+    </nav>
+	</header>
+		
+	<main id="main">
+    <!-- STUFF WILL ADDED (i removed content-right and content-left, and added the div with class row and container-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Our Mission</h2>			
+          <h1>Western AI</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <button class="cta">Learn More</button>
+        </div>
+        <div class="col">
+          <img src="robot.png" alt="Robo" class="robot-img" width="500">
+
+        </div>
+      </div>
+    </div>	
+	</main>
+
+	<section class="club_metrics" id="metrics" onload="numberAnimation()">
+		<div class="container">
+			<div class="row" id="row-title">
+				<div class="col-12">
+					<h1>CLUB<br>METRICS</h1>
+				</div>
+
+			</div>
+
+			<div class="row" id="number-boxes">
+        
+				<div class="col-2"></div>
+				<div class="col-2">
+					<div class="rectangle" id="scroll-to">		
+            <div class="counter" data-target="100">0</div>
+						<h2>number of members</h2>
+					</div>
+				</div>
+        <div class="col-1"></div>
+				<div class="col-2">
+					<div class="rectangle">		
+            <div class="counter" data-target="100">0</div>
+						<h2>number of projects completed</h2>
+					</div>
+				</div>
+        <div class="col-1"></div>
+				<div class="col-2">
+					<div class="rectangle">
+            <div class="counter" data-target="100">0</div>
+						<h2>number of executives</h2>
+						<p>(directors + vp)</p>
+					</div>
+				</div>
+				<div class="col-2"></div>
+			</div>
+		</div>
+	</div>	
+ 
+	</section>
+	<section class="initiatives" id="initiatives">
+		<div class="top">
+      <h2>OUR</h2>
+      <h1>INITIATIVES</h1>
+    </div>
+    <div class="carousel-box">
+      <div id="initiative-carousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+              <li data-target="#initiative-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#initiative-carousel" data-slide-to="1"></li>
+          </ol>
+          
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+              <div class="item active" >
+                  <div class="container">            
+                      <div class="row" id="row-title">
+                          <div class="col-12">
+                              <div class="rectangle">
+                                  <h1>TECH TIDBITS</h1>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row" id="row-content">
+                          <div class="col-12">
+                              <img src="tt.png" alt="Tech Tedbits" class="tt-img" width="150" >
+          
+                              <div class="rectangle">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>                
+              </div>
+
+              <div class="item" >
+                  <div class="container">            
+                      <div class="row" id="row-title">
+                          <div class="col-12">
+                              <div class="rectangle">
+                                  <h1>AD ASTRA</h1>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row" id="row-content">
+                          <div class="col-12">
+                              <img src="tt.png" alt="Tech Tedbits" class="tt-img">
+          
+                              <div class="rectangle">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>                
+              </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href"#initiative-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#initiative-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
+    </div>
+	</section>
+
+	<section class="portfolios" id="portfolios">
+		<div class="container">
+			<div class="row" id="row-title">
+				<div class="col-12">
+          <h1>Our<br>Portfolios</h1>
+				</div>
+			</div>
+      
+      <div class="row">   
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">    
+              <div class="col-5" id="left-col">                   
+                <div class="robo-icon">
+                  <img src="/assets/pres_robo.png" width="142" height="160" id="robot-img">
+                </div>
+                <h1>Co-President</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>    
+              </div>
+              <div class="col-7">  
+                <p>description 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus beatae deleniti magnam. Labore, quasi, ducimus modi aperiam, sequi corrupti sapiente animi ut incidunt omnis reprehenderit ipsum fugiat earum hic libero. </p>
+              </div>
+            </div>
+          </div>
+          
+				</div>
+				<div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">    
+              <div class="col-5">                  
+                <div class="robo-icon">
+                  <img src="/assets/flagship_icon.png" width="200" height="160" id="robot-img">
+                </div>
+                <h1>FLAGSHIP</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>    
+              </div>
+              <div class="col-7">  
+                <p>description 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus beatae deleniti magnam. Labore, quasi, ducimus modi aperiam, sequi corrupti sapiente animi ut incidunt omnis reprehenderit ipsum fugiat earum hic libero. </p>
+              </div>
+            </div>
+          </div>
+          
+				</div>
+		</div>
+    <div class="row">   
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">    
+              <div class="col-5">                   
+                <div class="robo-icon">
+                  <img src="/assets/dev_icon.png" width="169" height="160" id="robot-img">
+                </div>
+                <h1>development</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>    
+              </div>
+              <div class="col-7">  
+                <p>description 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus beatae deleniti magnam. Labore, quasi, ducimus modi aperiam, sequi corrupti sapiente animi ut incidunt omnis reprehenderit ipsum fugiat earum hic libero. </p>
+              </div>
+            </div>
+          </div>
+          
+				</div>
+				<div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">    
+              <div class="col-5">                  
+                <div class="robo-icon">
+                  <img src="/assets/projects_icon.png" width="167" height="160" id="robot-img">
+                </div>
+                <h1>projects</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>    
+              </div>
+              <div class="col-7">  
+                <p>description 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus beatae deleniti magnam. Labore, quasi, ducimus modi aperiam, sequi corrupti sapiente animi ut incidunt omnis reprehenderit ipsum fugiat earum hic libero. </p>
+              </div>
+            </div>
+          </div>
+          
+				</div>
+		</div>
+    <div class="row">   
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">    
+              <div class="col-5">                   
+                <div class="robo-icon">
+                  <img src="/assets/ed_icon.png" width="143" height="160" id="robot-img">
+                </div>
+                <h1>Educations</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>    
+              </div>
+              <div class="col-7">  
+                <p>description 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus beatae deleniti magnam. Labore, quasi, ducimus modi aperiam, sequi corrupti sapiente animi ut incidunt omnis reprehenderit ipsum fugiat earum hic libero. </p>
+              </div>
+            </div>
+          </div>          
+				</div>
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">    
+              <div class="col-5">                   
+                <div class="robo-icon">
+                  <img src="/assets/hacks_icon.png" width="170" height="160" id="robot-img">
+                </div>
+                <h1>Hacks</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>    
+              </div>
+              <div class="col-7">  
+                <p>description 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus beatae deleniti magnam. Labore, quasi, ducimus modi aperiam, sequi corrupti sapiente animi ut incidunt omnis reprehenderit ipsum fugiat earum hic libero. </p>
+              </div>
+            </div>
+          </div>          
+				</div>
+		</div>
+    <div class="row">   
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">    
+              <div class="col-5">                   
+                <div class="robo-icon">
+                  <img src="/assets/design_icon.png" width="169" height="160" id="robot-img">
+                </div>
+                <h1>design</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>    
+              </div>
+              <div class="col-7">  
+                <p>description 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus beatae deleniti magnam. Labore, quasi, ducimus modi aperiam, sequi corrupti sapiente animi ut incidunt omnis reprehenderit ipsum fugiat earum hic libero. </p>
+              </div>
+            </div>
+          </div>
+          
+				</div>
+				<div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">    
+              <div class="col-5">                  
+                <div class="robo-icon">
+                  <img src="/assets/comms_icon.png" width="190" height="160" id="robot-img">
+                </div>
+                <h1>communications</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>    
+              </div>
+              <div class="col-7">  
+                <p>description 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus beatae deleniti magnam. Labore, quasi, ducimus modi aperiam, sequi corrupti sapiente animi ut incidunt omnis reprehenderit ipsum fugiat earum hic libero. </p>
+              </div>
+            </div>
+          </div>
+          
+				</div>
+		</div>
+    <div class="row">   
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">    
+              <div class="col-5">                   
+                <div class="robo-icon">
+                  <img src="/assets/event_icon.png" width="152" height="160" id="robot-img">
+                </div>
+                <h1>events</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>    
+              </div>
+              <div class="col-7">  
+                <p>description 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus beatae deleniti magnam. Labore, quasi, ducimus modi aperiam, sequi corrupti sapiente animi ut incidunt omnis reprehenderit ipsum fugiat earum hic libero. </p>
+              </div>
+            </div>
+          </div>          
+				</div>
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">    
+              <div class="col-5">                   
+                <div class="robo-icon">
+                  <img src="/assets/finance_icon.png" width="170" height="160" id="robot-img">
+                </div>
+                <h1>finance</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>    
+              </div>
+              <div class="col-7">  
+                <p>description 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus beatae deleniti magnam. Labore, quasi, ducimus modi aperiam, sequi corrupti sapiente animi ut incidunt omnis reprehenderit ipsum fugiat earum hic libero. </p>
+              </div>
+            </div>
+          </div>          
+				</div>
+		</div>
+	</section>	
+  
+	<section class="team" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>The Team</h1>        
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>Co-Presidents</h2>        
+        </div>
+      </div>      
+      <div class="row">
+        <div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>    
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div>
+        
+        <div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>    
+                
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div>        
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h2>flagship</h2>        
+        </div>
+        <div class="col-6">
+          <h2>development</h2>        
+        </div>
+      </div>      
+      <div class="row">
+        <div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>    
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div>
+        
+        <div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>    
+                
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div><div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>    
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div>
+        
+        <div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>    
+                
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div>            
+      </div>
+     <div class="row">
+        <div class="col-6">
+          <h2>Projects</h2>        
+        </div>
+        <div class="col-3">
+          <h2>Education</h2>        
+        </div>
+        <div class="col-3">
+          <h2>Hacks</h2>        
+        </div>
+      </div>      
+      <div class="row">
+        <div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>    
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div>
+        
+        <div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>    
+                
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div><div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>    
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div>
+        
+        <div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>                    
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div>        
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <h2>Design</h2>        
+        </div>
+        <div class="col-3">
+          <h2>Comms</h2>        
+        </div>
+      </div>      
+      <div class="row">
+        <div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>    
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div>
+        
+        <div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>    
+                
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div><div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>    
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div>           
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <h2>events</h2>        
+        </div>
+        <div class="col-3">
+          <h2>finance</h2>        
+        </div>
+      </div>      
+      <div class="row">
+        <div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>    
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div>
+        
+        <div class="col-3">     
+          <div class="container">    
+            <div class = "row">
+              <div class="col">                
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>    
+                
+              </div>
+            </div>                
+            <div class = "row">  
+              <div class="col">   
+                <h3>Insert Name</h3>
+              </div>
+            </div>    
+          </div>
+        </div>        
+      </div>
+    </div>
+	</section>  
+  
+	<section class="alumni" id="alumni">
+    <div class="container">  
+      <div class="row">
+        <div class="col">
+          <h1>Alumni<br>companies</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">                
+          <div class="cloud-box">
+            <img src="/assets/cloud.png" id="sponsor-clouds">
+          </div>          
+        </div>
+      </div>
+    </div>
+	</section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row" id="row-a">
+        <div class="col-4"></div>
+        <div class="col-8">
+          <div class="rectangle">
+            <h1>Contact Us</h1>
+          </div>
+        </div> 
+      </div>
+      <div class="row" >
+        <div class="col-6" >
+          <div class="rectangle" >
+            <div class="row">
+              <div class="col">
+                <h2>Want to Work With Us?</h2>
+              </div>
+            </div>
+
+            <div class="row" id="row-btns" >
+              <div class="col-5">
+                <a onclick="copyEmail()" class="btn">Email Us</a>
+              </div>
+              <div class="col-5">
+                <a class="btn">Sponsorship<br>Package</a>
+              </div>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="rectangle" >
+            <div class="container">
+              <div class="row">
+                <h2>Social Media and Links</h2>
+              </div>
+              <div class="row" id="row-btns" >
+                <div class="col-2">
+                  <a class="ig" id="social-btn" onclick=" window.open('https://www.instagram.com/westernu.ai/','_blank')">
+                    <img src="/assets/instagram.png" id="social-icon">
+                  </a>                  
+                </div>
+                <div class="col-2">
+                  <a class="fb" id="social-btn"  onclick=" window.open('https://www.facebook.com/westernuai','_blank')">
+                    <img src="/assets/facebook.png" id="social-icon">
+                  </a>              
+                </div>
+                <div class="col-2">
+                  <a class="linkedin" id="social-btn" onclick=" window.open('https://www.linkedin.com/company/westernuai','_blank')">
+                    <img src="/assets/linkedin.png" id="social-icon">
+                  </a>              
+                </div>
+                <div class="col-2">
+                  <a class="discord" id="social-btn" onclick=" window.open('https://discord.gg/u6MStSStB7','_blank')">
+                    <img src="/assets/discord.png" id="social-icon">
+                  </a>              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5">
+          <div class="rectangle">
+            <h2>Our Instagram</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col" id="posts">
+                  <div class="ig-post">
+                    <img src="/assets/ig/wavelength.jpg" onclick=" window.open('https://www.instagram.com/p/CVyNPL8ptIx/?utm_source=ig_web_copy_link','_blank')" id="ig-cube" width="170" height="170">                    
+                  </div> 
+                </div>
+                <div class="col" id="posts">
+                  <div class="ig-post">
+                    <img src="/assets/ig/newsletter.jpg" onclick=" window.open('https://www.instagram.com/p/CVV7vXyvaz0/?utm_source=ig_web_copy_link','_blank')" id="ig-cube" width="170" height="170">  
+                  </div> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="ig-post" id="posts">
+                    <img src="/assets/ig/speaker.jpg" onclick=" window.open('https://www.instagram.com/p/CVOxBx2MKCv/?utm_source=ig_web_copy_link','_blank')" id="ig-cube" width="170" height="170">  
+                  </div> 
+                </div>
+                <div class="col">
+                  <div class="ig-post" id="posts">
+                    <img src="/assets/ig/hackathon.jpg" onclick=" window.open('https://www.instagram.com/p/CUU1obEFVO8/?utm_source=ig_web_copy_link','_blank')" id="ig-cube" width="170" height="170"> 
+                  </div> 
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+ <script>
+  function copyEmail() {
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText("westernuai@gmail.com");
+    /* Alert the copied text */
+    alert("Copied email to clipboard");
+  }
+
+  function numberAnimation(){
+    const counters = document.querySelectorAll('.counter');
+    const speed = 1000; // The lower the slower
+
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+        // Lower inc to slow and higher to slow
+        const inc = 1;
+
+        // Check if target is reached
+        if (count < target) {
+          // Add inc to count and output in counter
+          counter.innerText = count + inc;
+          // Call function every ms
+          setTimeout(updateCount, 1);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  }
+  $(window).scroll(function() {
+   var hT = $('#scroll-to').offset().top,
+       hH = $('#scroll-to').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+      numberAnimation()
+   } 
+  });
+
+	</script>
+
+</html>
