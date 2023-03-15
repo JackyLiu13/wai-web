@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Western AI</title>
+
+  <!-- Vanilla	Style Sheet -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+
+  <!-- ngl i forgot what this does  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">	</script>
+  
+<!--   Style sheet for arrows on carrosuel  -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- Bootstrap CSS -->
+  <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+  <!-- JavaScript Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script> 
+
+
+
+  <!-- Jquery but i dont rmb what it does -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">	</script>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">	</script>
+
+  <!--   Counter for Metrics Script  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+
+</head>
+
+<body>
+<!--   BOOT STRAP JS  -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+    <nav class="navbar sticky-top navbar-expand-lg" style="min-height: 100px;background-color: #2D7AEA;">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="WAI" width="75" height=auto> 
+      </a>
+      <!-- Minimalizer -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Nav Bar Buttons -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="#metrics">Metrics</a>
+          </li>   
+          <li class="nav-item">
+            <a class="nav-link"
+              href="#initiatives">Initiatives</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link"
+              href="#portfolios">Portfolios</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link"
+              href="#teak">Team</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link"
+              href="#alumni">Alumni</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link"
+              href="#contact">Contact Us</a>
+          </li>      
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Nav Bar -->
+
+  <!-- Hero Section of Website -->
+  <main id="main">
+    <!-- STUFF WILL ADDED (i removed content-right and content-left, and added the div with class row and container-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12" id="topHeader">
+          <h2> </br></br> Our Mission</h2>
+          <h1>Western AI</h1>
+          <p>
+            Founded in 2018, WAI is a registered club at Western University and the with 750+
+            members.
+            WAI is committed to developing future leaders in AI across all industries by connecting and educating
+            students through unique projects, competitions and educational events.
+          </p>
+          <button class="btn"
+            onclick="window.location.href='https://www.westernusc.store/product/western-artificial-intelligence-design/'">Sign
+            Up Here</button>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <img src="robot.png" alt="Robo" class="robot-img" width="500">
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- End Hero Section -->
+
+  <!-- Initiatives Section -->
+  <section class="initiatives" id="initiatives">
+    <div class="top">
+      <h2>OUR</h2>
+      <h1>INITIATIVES</h1>
+    </div>
+   <div id="myCarousel" class="carousel slide">
+  
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <div class="projcard-container">
+        <div class="projcard">
+          <div class="projcard-innerbox">
+            <img class="projcard-img" src="tt.png" />
+            <div class="projcard-textbox">
+              <div class="projcard-title">Western AI Social</div>
+              <div class="projcard-subtitle"> Rec Room!</div>
+              <div class="projcard-bar"></div>
+              <div class="projcard-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              <div class="projcard-tagbox">
+                <button type="button" onclick="window.open('https://www.instagram.com/westernu.ai/','_blank')"class="projcard-tag">Learn More Here</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+    <div class="projcard-container">
+           <div class="projcard">
+        <div class="projcard-innerbox">
+          <img class="projcard-img" src="tt.png" />
+          <div class="projcard-textbox">
+            <div class="projcard-title">Western AI Events</div>
+            <div class="projcard-subtitle">Data Quest!</div>
+            <div class="projcard-bar"></div>
+            <div class="projcard-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div class="projcard-tagbox">
+              <button type="button" onclick="window.open('https://www.instagram.com/westernu.ai/','_blank')"class="projcard-tag">Learn More Here</button>
+              <button type="button" class="projcard-tag">Save Event to Calander</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="projcard-container">
+            <div class="projcard">
+        <div class="projcard-innerbox">
+          <img class="projcard-img" src="tt.png" />
+          <div class="projcard-textbox">
+            <div class="projcard-title">Western AI Events</div>
+            <div class="projcard-subtitle">Something Else!</div>
+            <div class="projcard-bar"></div>
+            <div class="projcard-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div class="projcard-tagbox">
+              <button type="button" onclick="window.open('https://www.instagram.com/westernu.ai/','_blank')"class="projcard-tag">Learn More Here</button>
+              <button type="button" class="projcard-tag">Save Event to Calander</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  
+  <!-- Controls -->
+  <a class="carousel-control-prev"  role="button" >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+  <a class="carousel-control-next"  role="button">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+</div>
+  </section>
+        <!-- End of Initatives Section -->
+
+  <!-- Club Metric Section -->
+  <section class="club_metrics" id="metrics" onload="numberAnimation()">
+
+    <div class="col-lg-12 col-sm-12  col-xs-12">
+      <h1>CLUB<br>METRICS</h1>
+    </div>
+    <div class="container">
+      <div class="row" id="number-boxes">
+
+        <div class="col-lg-3 col-sm-12 col-xs-12">
+          <div class="rectangle" id="scroll-to">
+            <div class="counter" data-target="874">0</div>
+            <h2>Number of members</h2>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-lg-3 col-sm-12 col-xs-12">
+          <div class="rectangle">
+            <div class="counter" data-target="100">0</div>
+            <h2>Number of projects completed</h2>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-lg-3 col-sm-12 col-xs-12">
+          <div class="rectangle">
+            <div class="counter" data-target="37">0</div>
+            <h2>Number of executives</h2>
+            <p>(directors + vp)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Club Metric Section -->
+
+
+  <!-- Portfolios Sections -->
+  <section class="portfolios" id="portfolios">
+    <div class="container">
+      <div class="row" id="row-title">
+        <div class="col-12">
+          <h2>Our</h2>
+          <h1>Portfolios</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">
+              <div class="col-5" id="left-col">
+                <div class="robo-icon">
+                  <img src="/assets/pres_robo.png" width="115" height="130" id="robot-img">
+                </div>
+                <h1>Co-President</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>
+              </div>
+              <div class="col-7">
+                <p> Co-presidents are responsible for steering the overall vision of Western AI and its members.
+                  Co-presidents oversee all portfolios and tie the ideals of all the VPs in respective portfolios. </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">
+              <div class="col-5">
+                <div class="robo-icon">
+                  <img src="/assets/flagship_icon.png" width="163" height="130" id="robot-img">
+                </div>
+                <h1>FLAGSHIP</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>
+              </div>
+              <div class="col-7">
+                <p> The Flagship portfolio will be responsible for hosting two of the LARGEST AI events at Western this
+                  year (Sept/Oct and Jan/Feb), in addition to a few smaller-scale ones. Flagship is responsible for the
+                  creative direction and planning of AI case competitions, hackathons, workshops, and many more. Its
+                  main goal will be to plan innovative, large-scale events that cater to technical and non-technical
+                  students within the community. </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">
+              <div class="col-5">
+                <div class="robo-icon">
+                  <img src="/assets/dev_icon.png" width="137" height="130" id="robot-img">
+                </div>
+                <h1>development</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>
+              </div>
+              <div class="col-7">
+                <p> The Development Portfolio is focused on introducing all WAI members to employment in AI and tech,
+                  while broadening their knowledge of the industry. The Development Portfolio is also editing and
+                  redacting Wavelength, Western AI’s own newsletter, and the Speaker Series podcast, alongside with WAI
+                  Publications and WAI Flagship.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">
+              <div class="col-5">
+                <div class="robo-icon">
+                  <img src="/assets/projects_icon.png" width="136" height="130" id="robot-img">
+                </div>
+                <h1>projects</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>
+              </div>
+              <div class="col-7">
+                <p>The Projects portfolio provides opportunities for students to build and deploy Machine Learning
+                  models that will be presented to industry professionals at major conferences (i.e. CUCAI). </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">
+              <div class="col-5">
+                <div class="robo-icon">
+                  <img src="/assets/ed_icon.png" width="116" height="130" id="robot-img">
+                </div>
+                <h1>Educations</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>
+              </div>
+              <div class="col-7">
+                <p> The Education portfolio is responsible for helping to provide the Western AI community with
+                  educational resources and organizing events/workshops that will help members build their skills and
+                  knowledge in the field of Artificial Intelligence. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">
+              <div class="col-5">
+                <div class="robo-icon">
+                  <img src="/assets/hacks_icon.png" width="138" height="130" id="robot-img">
+                </div>
+                <h1>Hacks</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>
+              </div>
+              <div class="col-7">
+                <p>The Hacks portfolio is in charge of Western AI's very own varsity hackathon team, representing
+                  Western at hackathons across North America. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">
+              <div class="col-5">
+                <div class="robo-icon">
+                  <img src="/assets/design_icon.png" width="137" height="130" id="robot-img">
+                </div>
+                <h1>design</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>
+              </div>
+              <div class="col-7">
+                <p>The Design Portfolio is responsible for developing Western AI’s brand image and leading all creative
+                  initiatives within the club. Co-VP Design guides Western AI’s unique brand image and create innovative
+                  designs that market our goals, events, and opportunities to up to 800+ individuals.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">
+              <div class="col-5">
+                <div class="robo-icon">
+                  <img src="/assets/comms_icon.png" width="154" height="130" id="robot-img">
+                </div>
+                <h1>communications</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>
+              </div>
+              <div class="col-7">
+                <p> The communication portfolio maintain WAI's social media and announcing updates, event opportunities
+                  to members. The communication portfolio is also responsible of responding to inquiries from students
+                  and forwarding them to appropriate portfolios. </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">
+              <div class="col-5">
+                <div class="robo-icon">
+                  <img src="/assets/event_icon.png" width="124" height="130" id="robot-img">
+                </div>
+                <h1>events</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>
+              </div>
+              <div class="col-7">
+                <p>description 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus beatae deleniti
+                  magnam. Labore, quasi, ducimus modi aperiam, sequi corrupti sapiente animi ut incidunt omnis
+                  reprehenderit ipsum fugiat earum hic libero. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="col-boxes">
+          <div class="rectangle">
+            <div class="row">
+              <div class="col-5">
+                <div class="robo-icon">
+                  <img src="/assets/finance_icon.png" width="138" height="130" id="robot-img">
+                </div>
+                <h1>finance</h1>
+                <button class="btn">MEET THE EXECUTIVES</button>
+              </div>
+              <div class="col-7">
+                <p> WAI's financing portfolio is responsible for creating budget for the club and reporting our finances
+                  to WSC. WAI finance is also responsible of keeping track of the expenses and revenue of the club. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- End of Portfolios Section -->
+
+  <!-- Team Section -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>The Team</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>Co-Presidents</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h2>flagship</h2>
+        </div>
+        <div class="col-6">
+          <h2>development</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h2>Projects</h2>
+        </div>
+        <div class="col-3">
+          <h2>Education</h2>
+        </div>
+        <div class="col-3">
+          <h2>Hacks</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <h2>Design</h2>
+        </div>
+        <div class="col-3">
+          <h2>Comms</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <h2>events</h2>
+        </div>
+        <div class="col-3">
+          <h2>finance</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/pfp.png" width="100" height="100">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="pfp_icon">
+                  <img src="/assets/flagship_icon.png" width="100" height="100">
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Insert Name</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of The Team Section -->
+
+  <!-- Alumni Section -->
+  <section class="alumni" id="alumni">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Alumni<br>companies</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="cloud-box">
+            <img src="/assets/cloud.png" id="sponsor-clouds">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row" id="row-a">
+        <div class="col-4"></div>
+        <div class="col-8">
+          <div class="rectangle">
+            <h1>Contact Us</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <div class="rectangle">
+            <div class="row">
+              <div class="col">
+                <h2>Want to Work With Us?</h2>
+              </div>
+            </div>
+
+            <div class="row" id="row-btns">
+              <div class="col-4">
+                <a onclick="copyEmail()" class="btn">Email Us</a>
+              </div>
+              <div class="col-6">
+                <a class="btn">Sponsorship Package</a>
+              </div>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="rectangle">
+            <div class="container">
+              <div class="row">
+                <h2>Social Media and Links</h2>
+              </div>
+              <div class="row" id="row-btns">
+                <div class="col-2">
+                  <a class="ig" id="social-btn"
+                    onclick=" window.open('https://www.instagram.com/westernu.ai/','_blank')">
+                    <img src="/assets/instagram.png" id="social-icon">
+                  </a>
+                </div>
+                <div class="col-2">
+                  <a class="fb" id="social-btn" onclick=" window.open('https://www.facebook.com/westernuai','_blank')">
+                    <img src="/assets/facebook.png" id="social-icon">
+                  </a>
+                </div>
+                <div class="col-2">
+                  <a class="linkedin" id="social-btn"
+                    onclick=" window.open('https://www.linkedin.com/company/westernuai','_blank')">
+                    <img src="/assets/linkedin.png" id="social-icon">
+                  </a>
+                </div>
+                <div class="col-2">
+                  <a class="discord" id="social-btn" onclick=" window.open('https://discord.gg/u6MStSStB7','_blank')">
+                    <img src="/assets/discord.png" id="social-icon">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-lg-5 col-sm-12">
+          <div class="rectangle">
+            <h2>Our Instagram</h2>
+            <div class="container" id="ig-box">
+              <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/p/CZ5cZiMp8uR/?utm_source=ig_embed&amp;utm_campaign=loading"
+                data-instgrm-version="14"
+                style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:440px; min-width:326px; padding:0; width:89.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <div style="padding:16px;"> <a
+                    href="https://www.instagram.com/p/CZ5cZiMp8uR/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:90%;"
+                    target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div
+                        style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div
+                          style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div
+                          style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                    <div style="display:block; height:50px; margin:0 auto 12px; width:40px;"><svg width="50px"
+                        height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                        xmlns:xlink="https://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                            <g>
+                              <path
+                                d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                              </path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg></div>
+                    <div style="padding-top: 8px;">
+                      <div
+                        style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                        View this post on Instagram</div>
+                    </div>
+                    <div style="padding: 12.5% 0;"></div>
+                    <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                      <div>
+                        <div
+                          style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                        </div>
+                        <div
+                          style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                        </div>
+                        <div
+                          style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                        </div>
+                      </div>
+                      <div style="margin-left: 8px;">
+                        <div
+                          style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                        </div>
+                        <div
+                          style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                        </div>
+                      </div>
+                      <div style="margin-left: auto;">
+                        <div
+                          style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                        </div>
+                        <div
+                          style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                        </div>
+                        <div
+                          style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                      <div
+                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                      </div>
+                      <div
+                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                      </div>
+                    </div>
+                  </a> </div>
+              </blockquote>
+              <script async src="//www.instagram.com/embed.js"></script>
+              <!-- <div class="row">
+                <div class="col" id="posts">
+                  <div class="ig-post">
+                    <img src="/assets/ig/wavelength.jpg" onclick=" window.open('https://www.instagram.com/p/CVyNPL8ptIx/?utm_source=ig_web_copy_link','_blank')" id="ig-cube" width="170" height="170">                    
+                  </div> 
+                </div>
+                <div class="col" id="posts">
+                  <div class="ig-post">
+                    <img src="/assets/ig/newsletter.jpg" onclick=" window.open('https://www.instagram.com/p/CVV7vXyvaz0/?utm_source=ig_web_copy_link','_blank')" id="ig-cube" width="170" height="170">  
+                  </div> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="ig-post" id="posts">
+                    <img src="/assets/ig/speaker.jpg" onclick=" window.open('https://www.instagram.com/p/CVOxBx2MKCv/?utm_source=ig_web_copy_link','_blank')" id="ig-cube" width="170" height="170">  
+                  </div> 
+                </div>
+                <div class="col">
+                  <div class="ig-post" id="posts">
+                    <img src="/assets/ig/hackathon.jpg" onclick=" window.open('https://www.instagram.com/p/CUU1obEFVO8/?utm_source=ig_web_copy_link','_blank')" id="ig-cube" width="170" height="170"> 
+                  </div> 
+                </div>
+              </div> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of the Alumni Section -->
+
+  <!-- Start Past Projects Section -->
+  <section class="projects" id=projects>
+
+  </section>
+</body>
+
+<script>
+  function copyEmail() {
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText("westernuai@gmail.com");
+    /* Alert the copied text */
+    alert("Copied email to clipboard");
+  }
+
+  function numberAnimation() {
+    const counters = document.querySelectorAll('.counter');
+    const speed = 1000; // The lower the slower
+
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+        // Lower inc to slow and higher to slow
+        const inc = 1;
+
+        // Check if target is reached
+        if (count < target) {
+          // Add inc to count and output in counter
+          counter.innerText = count + inc;
+          // Call function every ms
+          setTimeout(updateCount, 1);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  }
+  $(window).scroll(function () {
+    var hT = $('#scroll-to').offset().top,
+      hH = $('#scroll-to').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+    if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH)) {
+      numberAnimation()
+    }
+  });
+  
+    $(document).ready(function(){
+        $('#myCarousel').carousel('pause');
+  
+  // Enable carousel control (left and right arrow)
+  $('.carousel-control-prev').click(function() {
+    $('#myCarousel').carousel('prev');
+  });
+  $('.carousel-control-next').click(function() {
+    $('#myCarousel').carousel('next');
+  });
+});
+
+</script>
+
+</html>

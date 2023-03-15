@@ -2,10 +2,15 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Western AI</title>
 
   <!-- Vanilla	Style Sheet -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="icon" href="assets/logo.png">
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,34 +18,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 
 
+
   <!--   Style sheet for arrows on carrosuel  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-
-  <!-- ngl i forgot what this does  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">	</script>
-
-
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 
   <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  <!--   i dont remember what this does but it broke the nav bar -->
+  <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>  -->
 
 
 
   <!-- Jquery but i dont rmb what it does -->
-  <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">	</script>
- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">	</script>
 
-  <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">	</script> -->
+  <!--   i think useless  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">	</script>
+  <!-- ngl i forgot what this does  -->
+  <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">	</script>
+   -->
+  <!--   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+  <script>
+    $(function () {
+      $('a').each(function () {
+        if ($(this).prop('href') == window.location.href) {
+          $(this).addClass('active'); $(this).parents('li').addClass('active');
+        }
+      });
+    });
+  </script>
+
 
   <!--   Counter for Metrics Script  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
@@ -49,53 +63,54 @@
 </head>
 
 <body>
+  <!--   BOOT STRAP JS  -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
 
-  <!-- Nav Bar Section -->
-  <nav class="navbar fixed-top navbar-expand-lg" style="min-height: 100px;background-color: #2D7AEA;">
+  <nav class="navbar sticky-top navbar-expand-lg " style="min-height: 100px;background-color: #2D7AEA;">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="logo.png" width="70" height=auto>
+      <a class="navbar-brand" href="#about"><img src="assets/logo.png" alt="WAI" width="75" height=auto
+          style="margin-left:75%">
       </a>
-      <!-- Nav bar minimizer -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- Minimalizer -->
+      <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- nav bar buttons itself -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto flex-nowrap">
-          <a id="first-nav" href="#main">
-            <li class="active">About</li>
-          </a>
-          <a href="#metrics">
-            <li>Metrics</li>
-          </a>
-          <a href="#initiatives">
-            <li>Initiatives</li>
-          </a>
-          <a href="#portfolios">
-            <li>Portfolios</li>
-          </a>
-          <a href="#team">
-            <li>Team</li>
-          </a>
-          <a href="#alumni">
-            <li>Alumni</li>
-          </a>
-          <a href="#contact">
-            <li>Contact Us</li>
-          </a>
+      <!-- Nav Bar Buttons -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" toggle="collapse" data-target=".navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#initiatives">Initiatives</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#metrics">Metrics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolios">Portfolios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#alumni">Alumni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
         </ul>
       </div>
-    </div>
     </div>
   </nav>
   <!-- End Nav Bar -->
 
   <!-- Hero Section of Website -->
-  <main id="main">
-    <!-- STUFF WILL ADDED (i removed content-right and content-left, and added the div with class row and container-->
-    <div class="container">
+  <section class="about" id="about">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-lg-6 col-sm-12" id="topHeader">
           <h2> </br></br> Our Mission</h2>
@@ -111,70 +126,135 @@
             Up Here</button>
         </div>
         <div class="col-lg-6 col-sm-12">
-          <img src="robot.png" alt="Robo" class="robot-img" width="500">
-
+          <img src="assets/robot.png" alt="Robo" class="robot-img" width="500">
         </div>
       </div>
     </div>
-  </main>
+  </section>
   <!-- End Hero Section -->
 
   <!-- Initiatives Section -->
   <section class="initiatives" id="initiatives">
+    <!--     Title  -->
     <div class="top">
-      <h2>OUR INITIATIVES</h2>
+      <h2>OUR</h2>
+      <h1>INITIATIVES</h1>
     </div>
-    <div class="carousel-box">
-      <div id="initiative-carousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#initiative-carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#initiative-carousel" data-slide-to="1"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <div class="container">
-              <div class="row" id="row-title">
-                <div class="col-12">
-                  <div class="rectangle">
-                    <h1>TECH TIDBITS</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="row" id="row-content">
-                <div class="col-12">
-                  <img src="tt.png" alt="Tech Tedbits" class="tt-img" width="150">
+    <!--     Carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-                  <div class="rectangle">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur.</p>
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="projcard-container">
+            <div class="projcard">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-md-12" id="imgcol">
+                    <img class="projcard-img" src="assets/social.png" style="width:70%; height:auto" />
+                  </div>
+                  <div class="col-lg-8 col-sm-12 col-md-12" id="bContent">
+                    <h1>Western AI Social!</h1>
+                    <div class="projcard-bar"></div>
+                    <h2>Rec Room</h2>
+                    <p style="font-size: 18px;">Organized and hosted by WesternAI, the Rec Room social is one of a kind.
+                      Bringing together members from different factors to enjoy an amazing event as one. Keep on the
+                      look out for our next event!</p>
+                    <div class="projcard-tagbox">
+                      <button type="button" onclick="window.open('https://www.instagram.com/westernu.ai/','_blank')"
+                        class="projcard-tag">Learn More Here</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="item">
-            <div class="container">
-              <div class="row" id="row-title">
-                <div class="col-12">
-                  <div class="rectangle">
-                    <h1>AD ASTRA</h1>
+        </div>
+        <div class="carousel-item">
+          <div class="projcard-container">
+            <div class="projcard">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-md-12" id="imgcol">
+                    <img class="projcard-img" src="assets/social.png" style="width:70%; height:auto" />
+                  </div>
+                  <div class="col-lg-8 col-sm-12 col-md-12" id="bContent">
+                    <h1>Western AI Events!</h1>
+                    <div class="projcard-bar"></div>
+                    <h2>Data Quest</h2>
+                    <p style="font-size: 18px;">DataQuest is a three-day hackathon on March 10-12, centered around data
+                      science and artificial intelligence. The event will be a hybrid format, starting with virtual
+                      workshops on data analytics and machine learning from March 6-9. The first and last days of the
+                      event will also be virtual (opening ceremonies, judging, and closing ceremonies), but on the
+                      second day we invite you to join us IN-PERSON at Western University to grab swag and food, network
+                      with company representatives, and attend workshops! </p>
+                    <div class="projcard-tagbox">
+                      <button type="button" onclick="window.open('https://www.instagram.com/westernu.ai/','_blank')"
+                        class="projcard-tag">Learn More Here</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="row" id="row-content">
-                <div class="col-12">
-                  <img src="tt.png" alt="Tech Tedbits" class="tt-img">
-
-                  <div class="rectangle">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+          </div>
+        </div>
+        <!-- CUCAI -->
+        <div class="carousel-item">
+          <div class="projcard-container">
+            <div class="projcard">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-md-12" id="imgcol">
+                    <!--                     Image Tag -->
+                    <img class="projcard-img" src="assets/initiatives/cucai.svg" style="width:70%; height:auto" />
+                  </div>
+                  <div class="col-lg-8 col-sm-12 col-md-12" id="bContent">
+                    <h1>Western AI Events!</h1>
+                    <div class="projcard-bar"></div>
+                    <h2>CUCAI</h2>
+                    <!--                     Description  -->
+                    <p style="font-size: 18px;">A conference of 300+ guests attracting top talent from across Canada.
+                      This year, they are hosting the conference at Queen's University, on March 4th and 5th. CUCAI
+                      brings together students looking to do more than their classwork. The community is one where we
+                      actively challenge the status quo around what undergraduate students are capable of achieving in
+                      the field of artificial intelligence. Makers, innovators and disruptors alike.</p>
+                    <div class="projcard-tagbox">
+                      <!--                       Buttons of the Event -->
+                      <button type="button" onclick="window.open('https://cucai.ca/')" class="projcard-tag">Learn More
+                        Here</button>
+                      <!--                       Package  -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Newsletter Sign Up -->
+        <div class="carousel-item">
+          <div class="projcard-container">
+            <div class="projcard">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-md-12" id="imgcol">
+                    <img class="projcard-img" src="assets/Wavelength Logo.png"
+                      style="width:70%; height:auto; margin-left: 50px;" />
+                  </div>
+                  <div class="col-lg-8 col-sm-12 col-md-12" id="bContent">
+                    <h1>Western AI Initiatives!</h1>
+                    <div class="projcard-bar"></div>
+                    <h2>Wavelength Newsletter</h2>
+                    <p style="font-size: 18px;">Keep your eyes out for the latest issue of Western AI's FREE exclusive
+                      monthly newsletter, Wavelength! You don't want to miss out on receiving the latest AI news, career
+                      opportunities, AI articles, and learning opportunities. This month newsletter features AI Art,
+                      Project Debater, and Synthetic Data.
+                      If you have not yet, be sure to subscribe to Wavelength for cool exclusive info about internships,
+                      artificial intelligence, and tech!</p>
+                    <div class="projcard-tagbox">
+                      <button type="button"
+                        onclick="window.open('https://dashboard.mailerlite.com/forms/109363/63809546118760352/share','_blank')"
+                        class="projcard-tag">Click Here to Sign Up</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -182,19 +262,21 @@
           </div>
         </div>
 
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href"#initiative-carousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#initiative-carousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+
       </div>
     </div>
+
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" role="button">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" role="button">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+    </div>
   </section>
-        <!-- End of Initatives Section -->
+  <!-- End of Initatives Section -->
 
   <!-- Club Metric Section -->
   <section class="club_metrics" id="metrics" onload="numberAnimation()">
@@ -202,27 +284,28 @@
     <div class="col-lg-12 col-sm-12  col-xs-12">
       <h1>CLUB<br>METRICS</h1>
     </div>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row" id="number-boxes">
 
         <div class="col-lg-3 col-sm-12 col-xs-12">
           <div class="rectangle" id="scroll-to">
-            <div class="counter" data-target="874">0</div>
-            <h2>Number of members</h2>
+            <div class="counter" data-target="238">0</div>
+            <h2>Active Members</h2>
           </div>
         </div>
         <div class="col-1"></div>
         <div class="col-lg-3 col-sm-12 col-xs-12">
           <div class="rectangle">
-            <div class="counter" data-target="100">0</div>
-            <h2>Number of projects completed</h2>
+            <div class="counter" data-target="423">0
+            </div>
+            <h2>Event Atendees</h2>
           </div>
         </div>
         <div class="col-1"></div>
         <div class="col-lg-3 col-sm-12 col-xs-12">
           <div class="rectangle">
             <div class="counter" data-target="37">0</div>
-            <h2>Number of executives</h2>
+            <h2>Executives</h2>
             <p>(directors + vp)</p>
           </div>
         </div>
@@ -234,537 +317,400 @@
 
 
   <!-- Portfolios Sections -->
+
   <section class="portfolios" id="portfolios">
-    <div class="container">
-      <div class="row" id="row-title">
-        <div class="col-12">
-          <h2>Our</h2>
-          <h1>Portfolios</h1>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col" id="col-boxes">
-          <div class="rectangle">
-            <div class="row">
-              <div class="col-5" id="left-col">
-                <div class="robo-icon">
-                  <img src="/assets/pres_robo.png" width="115" height="130" id="robot-img">
-                </div>
-                <h1>Co-President</h1>
-                <button class="btn">MEET THE EXECUTIVES</button>
-              </div>
-              <div class="col-7">
-                <p> Co-presidents are responsible for steering the overall vision of Western AI and its members.
-                  Co-presidents oversee all portfolios and tie the ideals of all the VPs in respective portfolios. </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col" id="col-boxes">
-          <div class="rectangle">
-            <div class="row">
-              <div class="col-5">
-                <div class="robo-icon">
-                  <img src="/assets/flagship_icon.png" width="163" height="130" id="robot-img">
-                </div>
-                <h1>FLAGSHIP</h1>
-                <button class="btn">MEET THE EXECUTIVES</button>
-              </div>
-              <div class="col-7">
-                <p> The Flagship portfolio will be responsible for hosting two of the LARGEST AI events at Western this
-                  year (Sept/Oct and Jan/Feb), in addition to a few smaller-scale ones. Flagship is responsible for the
-                  creative direction and planning of AI case competitions, hackathons, workshops, and many more. Its
-                  main goal will be to plan innovative, large-scale events that cater to technical and non-technical
-                  students within the community. </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="row">
-        <div class="col" id="col-boxes">
-          <div class="rectangle">
-            <div class="row">
-              <div class="col-5">
-                <div class="robo-icon">
-                  <img src="/assets/dev_icon.png" width="137" height="130" id="robot-img">
-                </div>
-                <h1>development</h1>
-                <button class="btn">MEET THE EXECUTIVES</button>
-              </div>
-              <div class="col-7">
-                <p> The Development Portfolio is focused on introducing all WAI members to employment in AI and tech,
-                  while broadening their knowledge of the industry. The Development Portfolio is also editing and
-                  redacting Wavelength, Western AI’s own newsletter, and the Speaker Series podcast, alongside with WAI
-                  Publications and WAI Flagship.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col" id="col-boxes">
-          <div class="rectangle">
-            <div class="row">
-              <div class="col-5">
-                <div class="robo-icon">
-                  <img src="/assets/projects_icon.png" width="136" height="130" id="robot-img">
-                </div>
-                <h1>projects</h1>
-                <button class="btn">MEET THE EXECUTIVES</button>
-              </div>
-              <div class="col-7">
-                <p>The Projects portfolio provides opportunities for students to build and deploy Machine Learning
-                  models that will be presented to industry professionals at major conferences (i.e. CUCAI). </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="row">
-        <div class="col" id="col-boxes">
-          <div class="rectangle">
-            <div class="row">
-              <div class="col-5">
-                <div class="robo-icon">
-                  <img src="/assets/ed_icon.png" width="116" height="130" id="robot-img">
-                </div>
-                <h1>Educations</h1>
-                <button class="btn">MEET THE EXECUTIVES</button>
-              </div>
-              <div class="col-7">
-                <p> The Education portfolio is responsible for helping to provide the Western AI community with
-                  educational resources and organizing events/workshops that will help members build their skills and
-                  knowledge in the field of Artificial Intelligence. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col" id="col-boxes">
-          <div class="rectangle">
-            <div class="row">
-              <div class="col-5">
-                <div class="robo-icon">
-                  <img src="/assets/hacks_icon.png" width="138" height="130" id="robot-img">
-                </div>
-                <h1>Hacks</h1>
-                <button class="btn">MEET THE EXECUTIVES</button>
-              </div>
-              <div class="col-7">
-                <p>The Hacks portfolio is in charge of Western AI's very own varsity hackathon team, representing
-                  Western at hackathons across North America. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col" id="col-boxes">
-          <div class="rectangle">
-            <div class="row">
-              <div class="col-5">
-                <div class="robo-icon">
-                  <img src="/assets/design_icon.png" width="137" height="130" id="robot-img">
-                </div>
-                <h1>design</h1>
-                <button class="btn">MEET THE EXECUTIVES</button>
-              </div>
-              <div class="col-7">
-                <p>The Design Portfolio is responsible for developing Western AI’s brand image and leading all creative
-                  initiatives within the club. Co-VP Design guides Western AI’s unique brand image and create innovative
-                  designs that market our goals, events, and opportunities to up to 800+ individuals.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col" id="col-boxes">
-          <div class="rectangle">
-            <div class="row">
-              <div class="col-5">
-                <div class="robo-icon">
-                  <img src="/assets/comms_icon.png" width="154" height="130" id="robot-img">
-                </div>
-                <h1>communications</h1>
-                <button class="btn">MEET THE EXECUTIVES</button>
-              </div>
-              <div class="col-7">
-                <p> The communication portfolio maintain WAI's social media and announcing updates, event opportunities
-                  to members. The communication portfolio is also responsible of responding to inquiries from students
-                  and forwarding them to appropriate portfolios. </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="row">
-        <div class="col" id="col-boxes">
-          <div class="rectangle">
-            <div class="row">
-              <div class="col-5">
-                <div class="robo-icon">
-                  <img src="/assets/event_icon.png" width="124" height="130" id="robot-img">
-                </div>
-                <h1>events</h1>
-                <button class="btn">MEET THE EXECUTIVES</button>
-              </div>
-              <div class="col-7">
-                <p>description 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus beatae deleniti
-                  magnam. Labore, quasi, ducimus modi aperiam, sequi corrupti sapiente animi ut incidunt omnis
-                  reprehenderit ipsum fugiat earum hic libero. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col" id="col-boxes">
-          <div class="rectangle">
-            <div class="row">
-              <div class="col-5">
-                <div class="robo-icon">
-                  <img src="/assets/finance_icon.png" width="138" height="130" id="robot-img">
-                </div>
-                <h1>finance</h1>
-                <button class="btn">MEET THE EXECUTIVES</button>
-              </div>
-              <div class="col-7">
-                <p> WAI's financing portfolio is responsible for creating budget for the club and reporting our finances
-                  to WSC. WAI finance is also responsible of keeping track of the expenses and revenue of the club. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-  <!-- End of Portfolios Section -->
-
-  <!-- Team Section -->
-  <section class="team" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>The Team</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h2>Co-Presidents</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/pfp.png" width="100" height="100">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/flagship_icon.png" width="100" height="100">
-                </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <h2>flagship</h2>
-        </div>
-        <div class="col-6">
-          <h2>development</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/pfp.png" width="100" height="100">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/flagship_icon.png" width="100" height="100">
-                </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/pfp.png" width="100" height="100">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/flagship_icon.png" width="100" height="100">
-                </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <h2>Projects</h2>
-        </div>
-        <div class="col-3">
-          <h2>Education</h2>
-        </div>
-        <div class="col-3">
-          <h2>Hacks</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/pfp.png" width="100" height="100">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/flagship_icon.png" width="100" height="100">
-                </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/pfp.png" width="100" height="100">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/flagship_icon.png" width="100" height="100">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-6">
-          <h2>Design</h2>
-        </div>
-        <div class="col-3">
-          <h2>Comms</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/pfp.png" width="100" height="100">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/flagship_icon.png" width="100" height="100">
-                </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/pfp.png" width="100" height="100">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-3">
-          <h2>events</h2>
-        </div>
-        <div class="col-3">
-          <h2>finance</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/pfp.png" width="100" height="100">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-3">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="pfp_icon">
-                  <img src="/assets/flagship_icon.png" width="100" height="100">
-                </div>
-
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h3>Insert Name</h3>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- <div class="row" id="row-title"> -->
+    <div id="row-title">
+      <div class="col-12">
+        <h2>Our</h2>
+        <h1>Portfolios</h1>
       </div>
     </div>
+    <!-- <div class="container"> -->
+    <div id="container">
+
+      <div id="portfolio-carousel">
+
+        <div class="col" id="col-boxes">
+          <div class="rectangle" id="co-president">
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+
+                <!-- <div class="flip-card-back"> -->
+                <div class="flip-card-front">
+
+                  <div class="row">
+
+                    <div class="col-5" id="left-col">
+                      <div class="robo-icon">
+                        <img src="/assets/pres_robo.png" id="robot-img">
+                      </div>
+                      <h1>Co-President</h1>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- <div class="flip-card-front"> -->
+                <div class="flip-card-back">
+                  <!-- <div class="row">
+                    <div class="col-5" id="left-col">
+                      <div class="ds-title">DESCRIPTION</div>
+                      
+                      <div class="description">
+                        Co-presidents are responsible for steering the overall vision of Western AI and its members. Co-presidents oversee all portfolios and tie the ideals of all the VPs in respective portfolios. 
+                      </div>
+                      
+                      <div class="hs-container">
+
+                        <div class="hs-circle">
+                          <div class="headshot">
+                            <img class = 'exec' src="headshots/jackyliu.png" alt="">
+                            <img class = 'logo' src="assets/linkedin.png" alt="">
+                          </div>
+
+                          <div class = "nametag">JACKY LIU</div>
+                        </div>
+
+                        <div style ='height: 5%;'></div>
+                        
+                        <div class="hs-circle">
+                          <div class="headshot">
+                            <img class = 'exec' src="headshots/alexwedermann.png" alt="">
+                            <img class = 'logo' src="assets/linkedin.png" alt="">
+                          </div>
+
+                          <div class = "nametag">SOMEONE ELSE</div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" id="col-boxes">
+          <div class="rectangle" id="flagship">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="robo-icon">
+                        <img src="/assets/flagship_icon.png" id="robot-img">
+                      </div>
+                      <h1>FLAGSHIP</h1>
+                      <!-- <button class="btn">MEET THE EXECUTIVES</button> -->
+                    </div>
+                  </div>
+
+                </div>
+                <div class="flip-card-back">
+                  <!-- <div class="row">
+                    <div class="col-5">
+
+                      <div class="hs-container">
+                        <div class="hs-circle">
+                          <div class="headshot">
+
+                            <img class = 'exec' src="headshots/alex.png" alt="">
+                            <img class = 'logo' src="assets/linkedin.png" alt="">
+                          </div>
+    
+                          <div class="nametag"></div>
+                        </div>
+    
+                      </div>
+                    </div>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col" id="col-boxes">
+          <div class="rectangle" id="development">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="robo-icon">
+                        <img src="/assets/dev_icon.png" id="robot-img">
+                      </div>
+                      <h1>development</h1>
+                      <!-- <button class="btn">MEET THE EXECUTIVES</button> -->
+                    </div>
+                    <!-- <div class="col-7">
+                     <p> The Development Portfolio is focused on introducing all WAI members to employment in AI and tech,
+                       while broadening their knowledge of the industry. The Development Portfolio is also editing and
+                       redacting Wavelength, Western AI’s own newsletter, and the Speaker Series podcast, alongside with WAI
+                       Publications and WAI Flagship.
+                     </p>
+                   </div> -->
+                  </div>
+                </div>
+                <div class="flip-card-back">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col" id="col-boxes">
+          <div class="rectangle" id="projects">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="robo-icon">
+                        <img src="/assets/projects_icon.png" id="robot-img">
+                      </div>
+                      <h1>projects</h1>
+                      <!-- <button class="btn">MEET THE EXECUTIVES</button> -->
+                    </div>
+                    <!-- <div class="col-7">
+                      <p>The Projects portfolio provides opportunities for students to build and deploy Machine Learning
+                        models that will be presented to industry professionals at major conferences (i.e. CUCAI). </p>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="flip-card-back">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col" id="col-boxes">
+          <div class="rectangle" id="education">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="robo-icon">
+                        <img src="/assets/ed_icon.png" id="robot-img">
+                      </div>
+                      <h1>Educations</h1>
+                      <!-- <button class="btn">MEET THE EXECUTIVES</button> -->
+                    </div>
+                    <!-- <div class="col-7">
+                      <p> The Education portfolio is responsible for helping to provide the Western AI community with
+                        educational resources and organizing events/workshops that will help members build their skills and
+                        knowledge in the field of Artificial Intelligence. </p>
+                    </div> -->
+                  </div>
+
+                </div>
+                <div class="flip-card-back">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" id="col-boxes">
+          <div class="rectangle" id="hacks">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="robo-icon">
+                        <img src="/assets/hacks_icon.png" id="robot-img">
+                      </div>
+                      <h1>Hacks</h1>
+                      <!-- <button class="btn">MEET THE EXECUTIVES</button> -->
+                    </div>
+                    <!-- <div class="col-7">
+                      <p>The Hacks portfolio is in charge of Western AI's very own varsity hackathon team, representing
+                        Western at hackathons across North America. </p>
+                    </div> -->
+                  </div>
+
+                </div>
+                <div class="flip-card-back">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" id="col-boxes">
+          <div class="rectangle" id="design">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="robo-icon">
+                        <img src="/assets/design_icon.png" id="robot-img">
+                      </div>
+                      <h1>design</h1>
+                      <!-- <button class="btn">MEET THE EXECUTIVES</button> -->
+                    </div>
+                    <!-- <div class="col-7">
+                      <p>The Design Portfolio is responsible for developing Western AI’s brand image and leading all creative
+                        initiatives within the club. Co-VP Design guides Western AI’s unique brand image and create innovative
+                        designs that market our goals, events, and opportunities to up to 800+ individuals.
+                      </p>
+                    </div> -->
+                  </div>
+
+                </div>
+                <div class="flip-card-back">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- woo best oneee -->
+        <div class="col" id="col-boxes">
+          <div class="rectangle" id="communications">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="robo-icon">
+                        <img src="/assets/comms_icon.png" id="robot-img">
+                      </div>
+                      <h1>communications</h1>
+                      <!-- <button class="btn">MEET THE EXECUTIVES</button> -->
+                    </div>
+                    <!-- <div class="col-7">
+                      <p> The communication portfolio maintain WAI's social media and announcing updates, event opportunities
+                        to members. The communication portfolio is also responsible of responding to inquiries from students
+                        and forwarding them to appropriate portfolios. </p>
+                    </div> -->
+                  </div>
+
+                </div>
+                <div class="flip-card-back">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col" id="col-boxes">
+          <!-- <div class="rectangle" id = "events"> -->
+          <div class="rectangle" id="operations">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="robo-icon">
+                        <img src="/assets/event_icon.png" id="robot-img">
+                      </div>
+                      <!-- <h1>events</h1> -->
+                      <h1>operations</h1>
+                      <!-- <button class="btn">MEET THE EXECUTIVES</button> -->
+                    </div>
+                    <!-- <div class="col-7">
+                      <p>  </p>
+                    </div> -->
+                  </div>
+
+                </div>
+                <div class="flip-card-back">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" id="col-boxes">
+          <div class="rectangle" id="finance">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="robo-icon">
+                        <img src="/assets/finance_icon.png" id="robot-img">
+                      </div>
+                      <h1>finance</h1>
+                      <!-- <button class="btn">MEET THE EXECUTIVES</button> -->
+                    </div>
+                    <!-- <div class="col-7">
+                      <p> WAI's financing portfolio is responsible for creating budget for the club and reporting our finances
+                        to WSC. WAI finance is also responsible of keeping track of the expenses and revenue of the club. </p>
+                    </div> -->
+                  </div>
+
+                </div>
+                <div class="flip-card-back">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" id="col-boxes">
+          <div class="rectangle" id="publications">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="robo-icon">
+                        <img src="/assets/publications_icon.png" id="robot-img">
+                      </div>
+                      <h1>publications</h1>
+                      <!-- <button class="btn">MEET THE EXECUTIVES</button> -->
+                      <!-- <div class="col-7">
+                      <p>The Publications portfolio creates content for Western AI’s Wavelength newsletter and Speaker Series podcast in collaboration with the Development portfolio. 
+                    We aim to promote and expand the reach of Western AI’s content to help students develop a stronger passion for AI and secure internships.  </p>
+                    </div> -->
+                    </div>
+                  </div>
+
+                </div>
+                <div class="flip-card-back">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
   </section>
-  <!-- End of The Team Section -->
 
   <!-- Alumni Section -->
   <section class="alumni" id="alumni">
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1>Alumni<br>companies</h1>
+          <h1>Alumni<br>Companies</h1>
         </div>
       </div>
       <div class="row">
@@ -968,49 +914,6 @@
   </section>
 </body>
 
-<script>
-  function copyEmail() {
-    /* Copy the text inside the text field */
-    navigator.clipboard.writeText("westernuai@gmail.com");
-    /* Alert the copied text */
-    alert("Copied email to clipboard");
-  }
-
-  function numberAnimation() {
-    const counters = document.querySelectorAll('.counter');
-    const speed = 1000; // The lower the slower
-
-    counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-
-        // Lower inc to slow and higher to slow
-        const inc = 1;
-
-        // Check if target is reached
-        if (count < target) {
-          // Add inc to count and output in counter
-          counter.innerText = count + inc;
-          // Call function every ms
-          setTimeout(updateCount, 1);
-        } else {
-          counter.innerText = target;
-        }
-      };
-      updateCount();
-    });
-  }
-  $(window).scroll(function () {
-    var hT = $('#scroll-to').offset().top,
-      hH = $('#scroll-to').outerHeight(),
-      wH = $(window).height(),
-      wS = $(this).scrollTop();
-    if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH)) {
-      numberAnimation()
-    }
-  });
-
-</script>
+<script src="js/index.js"></script>
 
 </html>
